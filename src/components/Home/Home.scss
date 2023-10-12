@@ -1,0 +1,21 @@
+main{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.image-container {
+    width:100%;
+    overflow: hidden;
+  }
+.image-container img{
+    width:100%;
+}
+
+.description-container{
+    
+    margin: 50px auto;
+    width:50em;
+    font-weight: 600;
+    font-size: 1.2em;
+}
