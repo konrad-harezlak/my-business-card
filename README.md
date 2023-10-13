@@ -37,24 +37,32 @@ Contact information, including links to my GitHub and LinkedIn profiles, phone n
 ## How to Run
 
 1. Clone the repository:
-  git clone https://github.com/konrad-harezlak/my-business-card
+```
+  git clone https://github.com/konrad-harezlak/my-business-card\
+```
 
 
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
+```
 cd businessCardReact
+```
 
 
-3. Install dependencies:
+5. Install dependencies:
+```
   npm install
   npm install react-router-dom
+```
 
 
-5. Start the development server:
+6. Start the development server:
+```
   npm start
+```
 
 
-6. Open your web browser and visit `http://localhost:3000` to view the website.
+8. Open your web browser and visit `http://localhost:3000` to view the website.
 
 ## Contact
 
