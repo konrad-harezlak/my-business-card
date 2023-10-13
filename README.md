@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# My Business Card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is my personal business card website built using React. It showcases my skills, projects, and contact information.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- JavaScript (React)
+- SCSS
+- HTML
+- CSS
+- react-router-dom
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The website consists of the following sections:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Home
 
-### `npm test`
+A brief description about me.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Articles
 
-### `npm run build`
+A search functionality to find posts from the `jsonfiles.json` file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Contact
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contact information, including links to my GitHub and LinkedIn profiles, phone number, and location.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+- **src/components/Home.js:** Home page component.
+- **src/components/Articles.js:** Articles page component with search functionality.
+- **src/components/Contact.js:** Contact page component.
+- **jsonfiles.json:** JSON file containing posts data.
+- **src/App.js:** Main component with React Router for navigation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to Run
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+  git clone https://github.com/konrad-harezlak/my-business-card
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+2. Navigate to the project directory:
+cd businessCardReact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install dependencies:
+  npm install
+  npm install react-router-dom
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Start the development server:
+  npm start
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+6. Open your web browser and visit `http://localhost:3000` to view the website.
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [Your GitHub Profile](https://github.com/konrad-harezlak)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/konrad-harężlak-6293a5272/)
+- Phone: 791-019-796
 
-### Advanced Configuration
+Feel free to get in touch if you have any questions or would like to collaborate!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
