@@ -1,10 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './Navigation.scss';
-import Image from './Images/H.jpg';
+import Image from './image/h.jpg';
 
-export default class Navitagion extends React.Component{
-    render(){
+const Navigation = ()=>{
         return(
             <nav>
                 <Link to='/'  className='links'><img src={Image} alt="logo-H"></img></Link>
@@ -17,5 +16,5 @@ export default class Navitagion extends React.Component{
 
             </nav>
         );
-    }
 }
+export default Navigation;

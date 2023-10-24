@@ -1,34 +1,28 @@
 import React from 'react';
 import './Article.scss'
-import Image from './Images/background.jpg'
-import jsonData from './JsonFiles.json'
+import Image from '../imageBg/background.jpg'
+import jsonData from './data.json'
 export default class Article extends React.Component {
     constructor() {
         super();
-        this.state={
-            inputValue:'',
+        this.state = {
+            searchResult: jsonData,
+            inputValue: '',
+            resoults: []
         };
     }
 
 
     handler = () => {
-        let {inputValue} = this.state;
-        const posts = document.getElementById('posts');
-        posts.innerHTML='';
-        jsonData.forEach(obj => {
-            if (JSON.stringify(obj.title).includes(inputValue)) {
-                posts.innerHTML += `
-            <div class="singlePost">
-                <h3>Tytuł: ${JSON.stringify(obj.title)}</h3>
-                <p>Treść: ${(obj.body)}</p>
-            </div>
-           `
-            }
+        const { inputValue, searchResult } = this.state;
+        if(searchResult){
+            const filteredResoults = searchResult.filter(obj =>
+                JSON.stringify(obj.title).includes(inputValue));
+            this.setState({ resoults: filteredResoults })
         }
-        )
     }
-    handleInputChange=(e)=>{
-        this.setState({inputValue: e.target.value})
+    handleInputChange = (e) => {
+        this.setState({ inputValue: e.target.value })
     }
 
     render() {
@@ -50,11 +44,17 @@ export default class Article extends React.Component {
                         Submit!
                     </button>
                 </div>
-               
-                <div id='posts'>
 
-                </div>
+                <div id='posts'>
+                    {this.state.resoults.map((post,index)=>(
+                        <div className='singlePost' key={index}>
+                            <h3>Tytuł: {post.title}</h3>
+                            <p>Treść: {post.body}</p>
+                        </div>
+                    ))}
+
+                        </div>
             </div>
-        )
+                )
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from './Images/background.jpg'
+import Image from '../imageBg/background.jpg'
 import './Home.scss'
 
 export default class Home extends React.Component {

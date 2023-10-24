@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.scss'
-import Image from './Images/background.jpg'
+import Image from '../imageBg/background.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faHouse, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
