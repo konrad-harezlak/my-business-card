@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation/Navigation';
+import Navigation from './components/Navigation/navigation.js';
 import Home from './components/Home/Home';
 import Article from './components/Article/Article';
 import Contact  from './components/Contact/Contact';
