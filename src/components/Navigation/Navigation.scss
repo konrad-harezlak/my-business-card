@@ -25,7 +25,7 @@ li {
     list-style: none;
     font-size: 1.5em;
     margin-right: 1em;
-    transition: color 0.3s ease; /* Added transition for a smoother color change */
+    transition: color 0.3s ease; 
 }
 
 .links {
@@ -36,9 +36,9 @@ nav img {
     height: 4.5em;
     width: auto;
     border-radius: 50px;
-    margin-left: 20px; /* Added margin for spacing */
+    margin-left: 20px;
 }
 
 .links:hover li {
-    color: #fff; /* Change color on hover */
+    color: #fff; 
 }
