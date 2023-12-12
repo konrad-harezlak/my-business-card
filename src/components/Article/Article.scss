@@ -1,85 +1,64 @@
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-article {
-    margin: 2rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-}
-h1 {
-    font-size: 24px;
-}
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-.article-container{
-    justify-content: center;
-    width: 100%;
-}
-.article-container .searchBar{
-    margin: 30px;
-        text-align: center;
-        
-}
-.article-container .searchBar input{
-    border: 1px solid #ccc; 
-    height:50px; 
-    width: 300px; 
-    border-radius: 30px;
-    margin-right: 10px;
-    text-align: center;
-    font-size:large;
-}
-.article-container .searchBar button{
-    background-color: green;
-    border: 1px solid #ccc; 
-    height:50px; 
-    width: 100px; 
-    border-radius: 30px;
-    margin-right: 10px;
-    text-align: center;
-    font-size:large;
-}
-.article-container .searchBar button:hover{
-    background-color: lightgreen;
-    border: 1px solid #ccc; 
-    height:50px; 
-    width: 100px; 
-    border-radius: 30px;
-    margin-right: 10px;
-    text-align: center;
-    font-size:large;
-}
-
-.article-container .img{
-    width: 400px;
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-container {
-    width:100%;
+    width: 100%;
     height: 200px;
     overflow: hidden;
-  }
-#posts{
-    width: 80%;
-    margin:0 auto;
-
 }
 
-.singlePost{
-    margin-bottom: 20px;
-    background-color: #dee;
-    padding:10px;
-    border-radius: 20px;
-}
-.singlePost h3{
+.searchBar {
+    margin: 30px;
     text-align: center;
 }
-.singlePost p{
+
+.searchBar input {
+    border: 1px solid #ccc;
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+    margin-right: 10px;
+    text-align: center;
     font-size: large;
+}
+
+.searchBar button {
+    background-color: green;
+    border: 1px solid #ccc;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: large;
+    transition: background-color 0.3s ease; 
+}
+
+.searchBar button:hover {
+    background-color: lightgreen;
+}
+
+#posts {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.singlePost {
+    margin-bottom: 20px;
+    background-color: #dee;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.singlePost h3 {
+    text-align: center;
+    font-size: 1.5em; 
+    margin-bottom: 10px;
+}
+
+.singlePost p {
+    font-size: 1.2em; 
+    line-height: 1.6;
 }
