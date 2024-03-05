@@ -51,7 +51,7 @@ export default class Projects extends React.Component {
             <p className="login-data">
               <b>Admin Account:</b>
               L: admin P: admin 
-              <br /> <br />
+              <br />
               <b>User Account:</b> 
               L: user1 P: user
             </p>

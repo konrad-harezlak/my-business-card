@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development', // Ustawiamy tryb na 'development'
+  mode: 'development', 
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -18,6 +18,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: ['@babel/plugin-proposal-private-property-in-object'],
           },
         },
       },
