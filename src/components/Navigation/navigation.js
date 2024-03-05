@@ -8,9 +8,10 @@ const Navigation = ()=>{
             <nav>
                 <Link to='/'  className='links'><img src={Image} alt="logo-H"></img></Link>
                 <ul>
-                    <Link to='/'  className='links'><li>Home</li></Link>
-                    <Link to='/article' className='links'><li>Article</li></Link>
-                    <Link to='/contact'  className='links'><li>Contact</li></Link>
+                    <Link to='/'  className='links'><li className="navigation-link">Home</li></Link>
+                    <Link to='/article' className='links'><li className="navigation-link">Article</li></Link>
+                    <Link to='/projects' className='links'><li className="navigation-link">Projects</li></Link>
+                    <Link to='/contact'  className='links'><li className="navigation-link">Contact</li></Link>
                 </ul>
 
 

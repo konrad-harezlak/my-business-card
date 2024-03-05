@@ -5,6 +5,7 @@ import Navigation from './components/Navigation/navigation.js';
 import Home from './components/Home/Home';
 import Article from './components/Article/Article';
 import Contact  from './components/Contact/Contact';
+import Projects from './components/Projects/Projects';
 import NotFound from './components/Not_Found/NotFound';
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route exact path="/" element={<Home />}></Route>
             <Route path="/article" element={<Article />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/projects" element={<Projects />}></Route>
             <Route path="*" element={<NotFound />}></Route>
 
         </Routes>
