@@ -2,63 +2,74 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.image-container {
-    width: 100%;
-    height: 200px;
+  }
+  
+  .image-container {
+    margin-bottom: 30px;
+    border-radius: 10px;
     overflow: hidden;
-}
-
-.searchBar {
-    margin: 30px;
-    text-align: center;
-}
-
-.searchBar input {
-    border: 1px solid #ccc;
-    height: 50px;
-    width: 300px;
-    border-radius: 30px;
-    margin-right: 10px;
-    text-align: center;
-    font-size: large;
-}
-
-.searchBar button {
-    background-color: green;
-    border: 1px solid #ccc;
-    height: 50px;
-    width: 100px;
-    border-radius: 30px;
-    text-align: center;
-    font-size: large;
-    transition: background-color 0.3s ease; 
-}
-
-.searchBar button:hover {
-    background-color: lightgreen;
-}
-
-#posts {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.singlePost {
-    margin-bottom: 20px;
-    background-color: #dee;
+  }
+  
+  .searchBar {
+    margin: 30px 0;
+  }
+  .searchBar form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .searchBar input[type="text"] {
     padding: 10px;
-    border-radius: 20px;
-}
-
-.singlePost h3 {
-    text-align: center;
-    font-size: 1.5em; 
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .searchBar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .searchBar button:hover {
+    background-color: #0056b3; 
+  }
+  #posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .singlePost {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .singlePost h3 {
+    font-size: 24px;
     margin-bottom: 10px;
-}
-
-.singlePost p {
-    font-size: 1.2em; 
-    line-height: 1.6;
-}
+  }
+  
+  .singlePost p {
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 500px){
+    .singlePost{
+        margin: 10px 15px;
+    }
+    .searchBar input[type="text"] {
+        margin:0;
+        margin-bottom:5px;
+    }
+  }

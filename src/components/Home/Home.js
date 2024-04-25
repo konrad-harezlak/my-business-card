@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from '../imageBg/background.jpg'
 import './Home.scss'
 
 export default class Home extends React.Component {
@@ -7,9 +6,6 @@ export default class Home extends React.Component {
     render() {
         return (
             <main>
-                <div className='image-container'>
-                    <img src={Image} alt="zdjecie" />
-                </div>
                 <div className='description-container'>
                     <header>
                         <h1>Konrad Harężlak</h1>

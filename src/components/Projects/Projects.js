@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Projects.scss";
 export default class Projects extends React.Component {
   render() {
@@ -7,9 +6,9 @@ export default class Projects extends React.Component {
       <main className="projects-container">
         <h1> My Projects: </h1>
         <ol className="projects-list">
-          <Link rel="https://calendar-frontend-brl8.onrender.com/calendar">
+          <a href="https://calendar-frontend-brl8.onrender.com/calendar">
             <li>Calendar</li>
-          </Link>
+          </a>
           <p className="description">
             <h3>Users:</h3>
             <ul className="login-data">
@@ -43,16 +42,16 @@ export default class Projects extends React.Component {
               useState hook
             </p>
           </p>
-          <Link rel="https://task-manager-frontend-2l7a.onrender.com">
+          <a href="https://task-manager-frontend-2l7a.onrender.com">
             <li>Task Manager</li>
-          </Link>
+          </a>
           <p className="description">
             <h3>Users:</h3>
             <p className="login-data">
               <b>Admin Account:</b>
-              L: admin P: admin 
+              L: admin P: admin
               <br />
-              <b>User Account:</b> 
+              <b>User Account:</b>
               L: user1 P: user
             </p>
             <h3>Project Overview:</h3>
@@ -87,9 +86,9 @@ export default class Projects extends React.Component {
               <br />- Admin Page
             </p>
           </p>
-          <Link rel="https://blog-bootstrap.netlify.app">
+          <a href="https://blog-bootstrap.netlify.app">
             <li>Blog</li>
-          </Link>
+          </a>
           <p className="description">
             <h3>Project Overview:</h3>
             <p>
@@ -119,9 +118,9 @@ export default class Projects extends React.Component {
               <br />- Newsletter Form
             </p>
           </p>
-          <Link rel="https://bussines-card-z31y.onrender.com">
-            <li>Portfolio</li>
-          </Link>
+          <a href="https://bussines-card-z31y.onrender.com">
+            <li>Bussines card</li>
+          </a>
           <p className="description">
             <h3>Project Overview:</h3>
             <p>
@@ -146,30 +145,23 @@ export default class Projects extends React.Component {
               <br />
               - Articles: A search functionality to find posts from the
               jsonfiles.json file.
-              <br />- Projects: This site! - Contact: Contact information,
-              including links to my GitHub and LinkedIn profiles, phone number,
-              and location.
+              <br />
+              - Projects: This site!
+              <br />
+              - Contact: Contact information, including links to my GitHub
+              and LinkedIn profiles, phone number, and location.
             </p>
           </p>
-          <Link rel="https://simple-portfolio-hary.netlify.app">
-            <li>My bussines card</li>
-          </Link>
+          <a href="https://simple-portfolio-hary.netlify.app">
+            <li>Portfolio</li>
+          </a>
           <p className="description">
-            {" "}
             <h3>Portfolio Overview:</h3>
             <p>
               This is my personal portfolio website showcasing my skills and
               projects. Feel free to explore!
             </p>
-            <h3>Table of Contents:</h3>
-            <ul>
-              <li>Introduction</li>
-              <li>Technologies</li>
-              <li>Features</li>
-              <li>Screenshots</li>
-              <li>Installation</li>
-              <li>Usage</li>
-            </ul>
+
             <h3>Introduction:</h3>
             <p>
               Welcome to my portfolio! My name is Konrad Harężlak, and I am a
@@ -204,9 +196,9 @@ export default class Projects extends React.Component {
               </li>
             </ul>
           </p>
-          <Link rel="https://bpu-koncept.netlify.app">
+          <a href="https://bpu-koncept.netlify.app">
             <li>Architecture Business Card</li>
-          </Link>
+          </a>
           <p className="description">
             <h3>Project Overview:</h3>
             <p>
